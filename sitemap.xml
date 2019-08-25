@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2019/08/25/http%E7%BC%93%E5%AD%98/</loc>
+    
+    <lastmod>2019-08-25T12:54:32.476Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2019/08/24/linux%E5%91%BD%E4%BB%A4%E6%AF%8F%E6%97%A5%E5%AD%A6-curl/</loc>
     
     <lastmod>2019-08-24T02:49:34.318Z</lastmod>
