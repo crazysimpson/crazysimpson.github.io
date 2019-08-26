@@ -87,7 +87,7 @@
 
 
 
-  <meta name="keywords" content="-debugger -C -Linux,">
+  <meta name="keywords" content="-http -前端,">
 
 
 
@@ -98,18 +98,18 @@
 
 
 
-<meta name="description" content="码农 | 电影爱好者 | Gamer">
-<meta name="keywords" content="-debugger -C -Linux">
+<meta name="description" content="压缩&amp;emsp;&amp;emsp;在网站开发过程了为了提高页面打开的速度往往对要传输的页面进行压缩，从而减少传数的数据量，为了实现该功能，同时需要http协议的配合。常用的压缩方式有两种gzip和deflat。 &amp;emsp;&amp;emsp;在浏览器向服务器发送请求时会在头部信息中设置Accept-Encoding字段，该字段是浏览器用来告诉服务器自己可以接受什么类型的压缩格式。服务器收到请求信息后，选择浏览">
+<meta name="keywords" content="-http -前端">
 <meta property="og:type" content="article">
-<meta property="og:title" content="简易debugger实现（一）">
-<meta property="og:url" content="http://yoursite.com/2019/06/25/简易debugger实现（一）/index.html">
+<meta property="og:title" content="http-压缩&amp;重定向">
+<meta property="og:url" content="http://yoursite.com/2019/08/27/http-压缩/index.html">
 <meta property="og:site_name" content="CRAZYSIMPSON">
-<meta property="og:description" content="码农 | 电影爱好者 | Gamer">
+<meta property="og:description" content="压缩&amp;emsp;&amp;emsp;在网站开发过程了为了提高页面打开的速度往往对要传输的页面进行压缩，从而减少传数的数据量，为了实现该功能，同时需要http协议的配合。常用的压缩方式有两种gzip和deflat。 &amp;emsp;&amp;emsp;在浏览器向服务器发送请求时会在头部信息中设置Accept-Encoding字段，该字段是浏览器用来告诉服务器自己可以接受什么类型的压缩格式。服务器收到请求信息后，选择浏览">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-26T07:03:29.739Z">
+<meta property="og:updated_time" content="2019-08-26T23:50:45.243Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="简易debugger实现（一）">
-<meta name="twitter:description" content="码农 | 电影爱好者 | Gamer">
+<meta name="twitter:title" content="http-压缩&amp;重定向">
+<meta name="twitter:description" content="压缩&amp;emsp;&amp;emsp;在网站开发过程了为了提高页面打开的速度往往对要传输的页面进行压缩，从而减少传数的数据量，为了实现该功能，同时需要http协议的配合。常用的压缩方式有两种gzip和deflat。 &amp;emsp;&amp;emsp;在浏览器向服务器发送请求时会在头部信息中设置Accept-Encoding字段，该字段是浏览器用来告诉服务器自己可以接受什么类型的压缩格式。服务器收到请求信息后，选择浏览">
 
 
 
@@ -139,13 +139,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/06/25/简易debugger实现（一）/">
+  <link rel="canonical" href="http://yoursite.com/2019/08/27/http-压缩/">
 
 
 
 
 
-  <title>简易debugger实现（一） | CRAZYSIMPSON</title>
+  <title>http-压缩&重定向 | CRAZYSIMPSON</title>
   
 
 
@@ -285,7 +285,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/25/简易debugger实现（一）/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/27/http-压缩/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="crazysimpson">
@@ -302,7 +302,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">简易debugger实现（一）</h1>
+          <h1 class="post-title" itemprop="name headline">http-压缩&重定向</h1>
         
 
         <div class="post-meta">
@@ -314,8 +314,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-06-25T10:51:21+08:00">
-                2019-06-25
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-08-27T07:39:30+08:00">
+                2019-08-27
               </time>
             
 
@@ -337,8 +337,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/编程/" itemprop="url" rel="index">
-                    <span itemprop="name">-编程</span>
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">-前端</span>
                   </a>
                 </span>
 
@@ -374,7 +374,10 @@
       
 
       
-        
+        <h3 id="压缩"><a href="#压缩" class="headerlink" title="压缩"></a><strong>压缩</strong></h3><p>&emsp;&emsp;在网站开发过程了为了提高页面打开的速度往往对要传输的页面进行压缩，从而减少传数的数据量，为了实现该功能，同时需要http协议的配合。常用的压缩方式有两种gzip和deflat。</p>
+<p>&emsp;&emsp;在浏览器向服务器发送请求时会在头部信息中设置Accept-Encoding字段，该字段是浏览器用来告诉服务器自己可以接受什么类型的压缩格式。服务器收到请求信息后，选择浏览器可以支持的压缩方式，对要传输的文件进行压缩并在返回的数据头部设置Content-Encoding字段，告诉浏览器服务器使用的是哪种压缩方式。浏览器收到服务器发送的数据后，根绝Content-Encoding里的压缩方式对获得的数据进行解压，然后就得到了完整的数据。</p>
+<h3 id="重定向"><a href="#重定向" class="headerlink" title="重定向"></a><strong>重定向</strong></h3><p>&emsp;&emsp;通过http协议，可以实现在后端对返回的页面进行重定向。服务器向浏览器返回的头部信息里有Location字段时，该字段的值就是浏览器要跳转的地址。</p>
+
       
     </div>
     
@@ -391,7 +394,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/debugger-C-Linux/" rel="tag"># -debugger -C -Linux</a>
+            <a href="/tags/http-前端/" rel="tag"># -http -前端</a>
           
         </div>
       
@@ -404,8 +407,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/06/23/开坑/" rel="next" title="开坑">
-                <i class="fa fa-chevron-left"></i> 开坑
+              <a href="/2019/08/25/http缓存/" rel="next" title="浏览器缓存">
+                <i class="fa fa-chevron-left"></i> 浏览器缓存
               </a>
             
           </div>
@@ -413,10 +416,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/06/28/linux命令每日学-tar/" rel="prev" title="linux命令每日学-tar">
-                linux命令每日学-tar <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -468,8 +467,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -532,6 +540,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#压缩"><span class="nav-number">1.</span> <span class="nav-text">压缩</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重定向"><span class="nav-number">2.</span> <span class="nav-text">重定向</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
